@@ -1,73 +1,240 @@
-# Real-Time Transaction System
+# 💳 Real-Time Transaction System
 
-## Project Overview
-The Real-Time Transaction System is a Java-based banking application developed using Java, JDBC, and MySQL. It allows users to perform banking operations such as account creation, deposits, withdrawals, balance inquiries, and transaction management in real time.
+![Java](https://img.shields.io/badge/Java-17-orange)
+![JDBC](https://img.shields.io/badge/JDBC-Database-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Features
-- Create new bank accounts
-- Deposit money
-- Withdraw money
-- Check account balance
-- View transaction history
-- JDBC connectivity with MySQL
-- Console-based user interface
+A **Java-based Banking Application** developed using **Java, JDBC, and
+MySQL**. The project demonstrates real-time banking operations including
+account creation, deposits, withdrawals, balance inquiry, and
+transaction history.
 
-## Technologies Used
+------------------------------------------------------------------------
 
-| Technology | Purpose |
-|------------|---------|
-| Java | Application Development |
-| JDBC | Database Connectivity |
-| MySQL | Database Management |
-| Eclipse IDE | Development Environment |
-| MySQL Connector/J | JDBC Driver |
+# 📌 Table of Contents
 
-## Project Structure
+-   Project Overview
+-   Features
+-   System Architecture
+-   Folder Structure
+-   Technologies Used
+-   Database Schema
+-   Installation
+-   Usage
+-   Screenshots
+-   Future Enhancements
+-   Skills Learned
+-   Contributing
+-   License
+-   Author
 
-```text
-Real-Time Transaction System
+------------------------------------------------------------------------
+
+# 📖 Project Overview
+
+The **Real-Time Transaction System** is a console-based banking
+application designed to simulate real banking operations securely using
+JDBC and MySQL. It follows Object-Oriented Programming principles and
+demonstrates CRUD operations with a relational database.
+
+------------------------------------------------------------------------
+
+# ✨ Features
+
+-   ✅ Create New Account
+-   💰 Deposit Money
+-   💸 Withdraw Money
+-   📊 Balance Inquiry
+-   📜 Transaction History
+-   🔒 Secure Database Connectivity
+-   ⚡ Real-Time Updates
+-   🧩 Modular Java Classes
+
+------------------------------------------------------------------------
+
+# 🏗️ System Architecture
+
+``` text
+      User
+        │
+ Console Application
+        │
+      Java
+        │
+      JDBC
+        │
+      MySQL
+```
+
+------------------------------------------------------------------------
+
+# 📂 Project Structure
+
+``` text
+Real-Time-Transaction-System/
 │
-├── DBConnection.java
-├── Account.java
-├── Deposit.java
-├── Withdraw.java
-├── Transaction.java
-├── Main.java
-└── MySQL Database
+├── src/
+│   ├── Main.java
+│   ├── DatabaseConnection.java
+│   ├── Account.java
+│   ├── Deposit.java
+│   ├── Withdraw.java
+│   ├── TransactionHistory.java
+│   └── TransactionThread.java
+│
+├── database/
+│   └── banking.sql
+│
+├── screenshots/
+│
+├── README.md
+└── LICENSE
 ```
 
-## JDBC Configuration
+------------------------------------------------------------------------
 
-```java
-String url = "jdbc:mysql://localhost:3306/bankdb";
-String username = "root";
-String password = "your_password";
+# ⚙️ Technologies Used
 
-Connection con = DriverManager.getConnection(url, username, password);
+  Technology   Purpose
+  ------------ -----------------------
+  Java         Core Programming
+  JDBC         Database Connectivity
+  MySQL        Database
+  Eclipse      IDE
+  Git          Version Control
+  GitHub       Repository Hosting
+
+------------------------------------------------------------------------
+
+# 🗄️ Database Schema
+
+## Accounts Table
+
+  Column       Type
+  ------------ ---------
+  account_no   INT
+  name         VARCHAR
+  pin          VARCHAR
+  balance      DOUBLE
+
+## Transactions Table
+
+  Column             Type
+  ------------------ ----------
+  transaction_id     INT
+  account_no         INT
+  transaction_type   VARCHAR
+  amount             DOUBLE
+  transaction_date   DATETIME
+
+------------------------------------------------------------------------
+
+# 🚀 Installation
+
+``` bash
+git clone https://github.com/digvijaypokhriyal587-a11y/Real-Time-Transaction-System.git
+
+cd Real-Time-Transaction-System
 ```
 
-## Learning Outcomes
+1.  Import into Eclipse/IntelliJ.
+2.  Install MySQL.
+3.  Create the database.
+4.  Import `banking.sql`.
+5.  Update JDBC username/password.
+6.  Run `Main.java`.
 
-- Understanding JDBC connectivity
-- Database design using MySQL
-- CRUD operations in Java
-- Exception handling
-- Real-time transaction processing
-- Object-Oriented Programming concepts
+------------------------------------------------------------------------
 
-## Future Enhancements
+# ▶️ Usage
 
-- Graphical User Interface (GUI)
-- User Authentication
-- Fund Transfer Between Accounts
-- Transaction History Reports
-- Online Banking Features
-- SMS/Email Notifications
+1.  Launch the application.
+2.  Create a new account.
+3.  Deposit or withdraw funds.
+4.  Check your balance.
+5.  View transaction history.
 
-## Author
+------------------------------------------------------------------------
 
-**Digvijay Pokhriyal**  
-B.Tech (Computer Science & Engineering)
+# 🖼️ Screenshots
+
+> Add images inside the `screenshots/` folder and update the links
+> below.
+
+``` md
+![Home](screenshots/home.png)
+
+![Create Account](screenshots/create-account.png)
+
+![Deposit](screenshots/deposit.png)
+
+![Withdraw](screenshots/withdraw.png)
+
+![Transaction History](screenshots/history.png)
+```
+
+------------------------------------------------------------------------
+
+# 📈 Future Enhancements
+
+-   JavaFX GUI
+-   OTP Authentication
+-   Admin Dashboard
+-   PDF Mini Statement
+-   Fund Transfer
+-   QR Payments
+-   Email Notifications
+-   REST API Integration
+
+------------------------------------------------------------------------
+
+# 🧠 Skills Learned
+
+-   Object-Oriented Programming
+-   JDBC Connectivity
+-   SQL Queries
+-   CRUD Operations
+-   Exception Handling
+-   Multithreading
+-   Git & GitHub
+
+------------------------------------------------------------------------
+
+# 🤝 Contributing
+
+1.  Fork the repository.
+2.  Create a feature branch.
+3.  Commit your changes.
+4.  Push to GitHub.
+5.  Open a Pull Request.
+
+------------------------------------------------------------------------
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+------------------------------------------------------------------------
+
+# 👨‍💻 Author
+
+**Digvijay Pokhriyal**
+
+-   🎓 B.Tech Computer Science
+-   🏫 Graphic Era Hill University
+-   💻 Java Developer
+-   🌐 GitHub: https://github.com/digvijaypokhriyal587-a11y
+
+------------------------------------------------------------------------
+
+# ⭐ Support
+
+If you found this project useful, please **give it a ⭐ on GitHub**.
+
+Made with ❤️ by **Digvijay Pokhriyal**
+
 
 ## Conclusion
 

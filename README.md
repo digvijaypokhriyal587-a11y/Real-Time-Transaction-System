@@ -158,25 +158,6 @@ cd Real-Time-Transaction-System
 
 ------------------------------------------------------------------------
 
-# 🖼️ Screenshots
-
-> Add images inside the `screenshots/` folder and update the links
-> below.
-
-``` md
-![Home](screenshots/home.png)
-
-![Create Account](screenshots/create-account.png)
-
-![Deposit](screenshots/deposit.png)
-
-![Withdraw](screenshots/withdraw.png)
-
-![Transaction History](screenshots/history.png)
-```
-
-------------------------------------------------------------------------
-
 # 📈 Future Enhancements
 
 -   JavaFX GUI
